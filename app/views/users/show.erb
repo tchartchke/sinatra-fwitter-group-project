@@ -1,0 +1,7 @@
+<a href="/tweets">go to tweets</a><br>
+<a href="/logout">logout</a>
+<p>
+  <% @user.tweets.each do |tweet| %>
+    <%= tweet.content %>
+  <% end %>
+</p>

@@ -1,0 +1,7 @@
+Welcome, here are all the tweets:
+
+<% Tweet.all.each do |tweet| %>
+  <p><%= tweet.user.username %> says "<%= tweet.content %>"</p>
+<% end %>
+
+<a href="/tweets/new">Create new Tweet</a>
